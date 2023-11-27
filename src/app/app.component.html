@@ -1,0 +1,144 @@
+<!-- menu -->
+
+<div class="container-fluid ">
+  <header class="bg-dark menu-header"> 
+    <div class="group-heaher"> 
+      <img class="img-logo-shop" src="../assets/image/systerm/logo.png"> 
+      
+      <div  class="group-right-header">
+
+      <app-cart *ngIf="name != 'admin'" [quantityItem]="quantityIteminCart"></app-cart>
+        
+        <div *ngIf="name!=''" class="group-personal">
+          <a *ngIf="name!='admin' else admin" routerLink="/trangcanhan"> <i class="bi bi-person-fill icon-personal"></i></a> 
+          <ng-template #admin>
+            <a routerLink="/admin"> <i class="bi bi-person-fill icon-personal"></i></a>
+          </ng-template>
+          <div>
+            <span  style="color: whitesmoke;">{{name}}</span>  
+
+            <!-- hovver -->
+            <div class="group-option-personal">
+              <p>Trang cá nhân</p>
+              <p>Đăng xuất</p>
+              <p>Quên mật khẩu</p> 
+            </div>
+
+          </div>
+
+         </div>
+      </div>
+    </div>
+  </header>
+ 
+  <nav class="bg-warning">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid pd-10">
+        <a class="navbar-brand" href="#" routerLink="/home">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!-- <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"routerLink="/sanpham" >Sản phẩm</a>
+            </li> -->
+             <!-- sản phẩm, loại sản phẩm -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" routerLink="/sanpham">
+                Sản phẩm  
+              </a>
+              <ul class="dropdown-menu">
+                <li *ngFor="let loai of listCategoryName" >
+                  <a class="dropdown-item" href="#" routerLink="/loai/{{loai.id}}">{{loai.tenLoai}}</a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#" routerLink="/lienhe">Liên hệ</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Tài khoản
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#" routerLink="/dangky">Đăng kí</a></li>
+                <li><a class="dropdown-item" href="#" routerLink="/dangnhap">Đăng nhập</a></li>
+                <li><a class="dropdown-item" href="#" routerLink="" (click)="openLogoutConfimation()">Đăng xuất</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+              </ul>
+            </li>
+          </ul>
+         
+          <form class="d-flex" role="search">
+            <input class="form-control me-2 pd-5" name="search"  placeholder="Search" aria-label="Search" [(ngModel)]="keySearch">
+            <button class="btn btn-success pd-5" routerLink="/timkiem/{{keySearch}}">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav> 
+  </nav>
+  
+    <div class="group-render-content" >
+      <main class="col-md-11 group-content">
+        <article class="col-md-12 bg-light"> 
+          <!-- render component con -->
+           <router-outlet>
+            
+          </router-outlet>
+        </article>
+        
+      </main>
+    </div>
+  
+  
+</div>
+
+<footer class=" text-center container-fluid footer-group">
+  <hr />
+  <div class=" row pd-30">
+      <div class="col-md-3 col-sm-12">
+          <h5>HỖ TRỢ KHÁCH HÀNG</h5>
+          <p>Hotline: 0387079343</p>
+          <p>Các câu hỏi thương gặp</p>
+          <p>Gửi yêu cầu hỗ trợ</p>
+          <p>Hướng dẫn đặt hàng</p>
+          <p>Hướng dẫn bán hàng</p>
+          <p>Phương thức vận chuyển</p>
+          <p>Chỉnh sách đổi trả</p>
+          <p>Thanh toán</p>
+          <p>Vận chuyển</p>
+          <p>Chính sách bảo hành</p>
+          <p>Trung tâm trợ giúp</p>
+      </div>
+      <div class="col-md-3 col-sm-12">
+          <p>Giới thiệu</p>
+          <p>Tuyển dụng</p>
+          <p>Điều khoản</p>
+          <p>Chính sách bảo mật</p>
+          <p>Chính hãng</p>
+          <p>Liên hệ với truyền thông</p>
+      </div>
+      <div class="col-md-2 col-sm-12">
+          <h5>THANH TOÁN</h5>
+      </div>
+      <div class="col-md-2 col-sm-12">
+          <h5>THEO DÕI</h5>
+      </div>
+      <div class="col-md-2 col-sm-12">
+          <h5>TẢI ỨNG DỤNG NGAY THÔI</h5>
+      </div>
+  </div>
+  <hr />
+  <div class="row">
+      <div class="col-md-3 col-sm-12">
+          2022. Tất cả các quyền được bảo lưu
+      </div>
+      <div class="col-md-9 col-sm-12" style="text-align:center;">
+          Quốc gia và khu vực: Singapore | Indonesia | Đài Loan | Thái Lan | Malaysia | Việt Nam | Philippines | Brazil | Mexico | Colombia | Chile | Poland
+      </div>
+  </div>
+</footer>

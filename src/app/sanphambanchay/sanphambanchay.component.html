@@ -1,0 +1,13 @@
+<h3 class="bg-success p-2 text-white h5">ĐỒNG HỒ BÁN CHẠY </h3>
+
+<div class="group-product"> 
+    <div *ngFor="let product of listProduct" class="item-product-best-saler"> 
+        <div class="content-product-best-saler group-detailts-product" routerLink="/sanpham/{{product.id}}">
+            <p class="color-red"> {{product.tensp}}</p> 
+            <img src="../../assets/image/{{product.hinh[0]}}">   
+            <p>{{product.giasp| number:'1.0-0'}} VNĐ</p>
+            <!-- <p>{{product.ngay| date: 'MM/dd/yyyy'}} </p> -->
+            <a class="btn btn-primary" href="#" routerLink="/sanpham/{{product.id}}">Xem chi tiết</a>
+        </div>
+    </div>
+</div>

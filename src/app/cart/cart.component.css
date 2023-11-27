@@ -1,0 +1,24 @@
+.group-cart{
+    position: relative;
+    width: min-content;
+}
+.icon-cart{
+    color: #fff;
+    width: 40px;
+   
+}
+.quantityItem{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    font-size: small;
+    text-align: center;
+    background-color: red;
+    border-radius: 100%;
+    position: absolute;
+    right: -8px;
+    top: -5px;
+}

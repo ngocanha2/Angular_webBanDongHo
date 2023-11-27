@@ -1,0 +1,17 @@
+<h4> Kết quả tìm kiếm</h4>
+<div class="group-list-product"  > 
+    <div *ngFor="let sp of listProduct" class="item-product">
+        <div class="content-product card">
+            <img class="img-product" src="../../assets/image/{{sp.hinh[0]}}">
+            <p class="name-product"> {{sp.tensp}} </p>
+            <p class="cost-product "> {{sp.giasp|number:'1.0-0'}} VNĐ </p>
+            <a class="btn btn-primary pd-10" routerLink="/sanpham/{{sp.id}}"> Xem chi tiết </a>
+            
+        </div>
+    </div>
+</div>
+
+<div> 
+    
+</div>
+

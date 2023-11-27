@@ -1,0 +1,8 @@
+.icon-delete{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+.ml-0{
+    margin-right: 0px;
+}

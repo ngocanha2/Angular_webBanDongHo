@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.group-list-product{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    /* background-color: lightgoldenrodyellow; */
+    padding: 20px;
+}
+.item-product{
+   width: 30%;
+}
+.content-product{
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    /* background-color: azure; */
+    padding: 20px;
+    justify-content: center;
+    align-items: start;
+    gap: 5px;
+}
+.content-product:hover{
+    border: 1px solid red;
+}
+.img-product{
+    width: 100%;
+    /* height: 80%; */
+}
+.name-product{
+    color: rgb(132, 1, 1);
+    font-weight: 500;
+    font-size: medium;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+}
+.group-title{
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center;
+    justify-content: center; */
+}
+.img-title{
+    width: 100%;
+   
+}
+.title-category{
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    color: #757373;
+}
+.menu-category{
+   margin-right: 30px;
+}
+.menu-category-header{
+    color: #f7f7f7;
+    font-size: large;
+    font-weight: 500;
+    background-color: #333333;
+    padding: 20px;
+    
+}
+.nav-link{
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color:rgb(240,240,240);
+    color:hsl(33, 5%, 38%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link:hover{
+   opacity: 0.8;
+   color: rgba(0, 0, 0, 0.771);
+   border-left: 4px solid #0cb343;
+}
+
+.menu-category-child-header{
+    margin-top: 30px;
+    padding-left: 20px;
+    color: rgba(0, 0, 0, 0.771);
+    font-size: large;
+    font-weight: 500;
+    border-bottom: 2px solid #f0f0f0;
+
+}
+.item-child-menu{
+    /* background-color:#fff; */
+    opacity: 0.8;
+    color: rgba(0, 0, 0, 0.771);
+    padding: 8px 20px;
+    cursor: pointer;
+}
+.item-child-menu:hover{
+  border-right: 4px solid #0cb343;
+}
+.child-mennu{
+    margin-right: 30px;
+}
+
+.pd-10{
+    padding: 5px 10px;
+}

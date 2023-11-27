@@ -1,0 +1,71 @@
+<div class="row mt-30"> 
+    <div class="col-md-3">
+        <app-menubaradmin> </app-menubaradmin>
+        
+    </div>
+    <div class="col-md-9">
+       <div >
+        <form class="" #frm_Insert>
+            <div class="mb-3">
+              <label for="name" class="form-label">Tên sản phẩm</label>
+              <textarea class="form-control" id="name" name="name" placeholder="Nhập tên sản phẩm" [(ngModel)]="product.tensp" required ></textarea>
+              <div class="invalid-feedback">
+                Tên sản phẩm không được để trống
+              </div>
+            </div>
+          
+            <div class="mb-3">
+                <label for="catergory" class="form-label">Loại sản phẩm</label>
+              <select class="form-select" id="catergory" name="catergory" required aria-label="select example" (change)="onChangeCategory($event)" [(ngModel)]="product.idLoai" >
+                <option *ngFor="let i of listCategorie" value="{{i.id}}">
+                    {{i.tenLoai}}    
+                </option>
+              </select>
+              <div class="invalid-feedback">Vui lòng chọn loại sản phẩm</div>
+            </div>
+
+            <div class="mb-3 group-subcategory" *ngIf="listSubCategorie.length > 0 || product.idLoaiCon !=0">
+                <label for="subcatergory" class="form-label">Loại sản phẩm con</label>
+                <select class="form-select" id="subcatergory" name="subcatergory" required aria-label="select example" [(ngModel)]="product.idLoaiCon">
+                    <option *ngFor="let i of listSubCategorie" value="{{i.id}}">
+                        {{i.tenLoaiCon}}    
+                    </option>
+                </select>
+                <div class="invalid-feedback">Vui lòng chọn loại sản phẩm con</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="cost" class="form-label">Giá bán </label>
+                <input class="form-control" id="cost" name="cost" required type="number" (change)="changeQuantity($event)" [(ngModel)]="product.giasp">
+                <div class="invalid-feedback">Vui lòng nhập giá bán </div>
+              </div>
+              
+              <div class="mb-3">
+                <label for="quantity" class="form-label">Số lượng tồn </label>
+                <input class="form-control" id="quantity" name="quantity" required type="number" (change)="changeQuantity($event)" [(ngModel)]="product.soluong">
+                <div class="invalid-feedback">Vui lòng nhập số lượng </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="describe" class="form-label">Mô tả sản phẩm</label>
+                <textarea class="form-control" id="describe" name="describe" placeholder="Nhập mô tả sản phẩm" [(ngModel)]="product.mota" ></textarea>
+              </div>
+
+            <div class="mb-3">
+                <label for="file" class="form-label">Hình ảnh</label>
+              <input type="file" multiple id ="file" name="file" class="form-control" aria-label="file example" (change)="OnChangeImage($event)" >
+              <div class="invalid-feedback">Vui lòng chọn hình sản phẩm</div>
+            </div>
+          
+            <div class="mb-3">
+              <button *ngIf="flag" class="btn btn-primary" type="submit" (click)="validate()">Thêm sản phẩm mới</button>
+              <button *ngIf="!flag" class="btn btn-primary" type="submit" (click)="validate()">Sửa thông tin sản phẩm</button>
+            </div>
+            
+          </form>
+
+       </div>
+      <!--  -->
+    </div>
+    </div>
+    

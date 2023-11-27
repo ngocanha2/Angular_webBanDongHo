@@ -1,0 +1,14 @@
+.modal-header,
+.modal-footer{
+    border: none;
+}
+.group-close-icon{
+   margin: 0;
+    border: none;
+    background-color: transparent;
+}
+.close-icon{
+    background-color: rgb(228, 85, 85);
+    color: white;
+ 
+}

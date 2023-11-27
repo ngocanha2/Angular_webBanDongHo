@@ -1,0 +1,25 @@
+.group-option{
+    background-color: #333333;
+    border-bottom: 1px solid #777;
+}
+
+.parent-option{
+    /* color: #f7f7f7; */
+    color: #777;
+    font-size: large;
+    font-weight: 400;
+    padding: 10px 20px;
+    border-bottom: 1px #777;
+}
+.parent-option:hover{
+    color: #f7f7f7;
+}
+.group-child-option{
+    color: hsl(33, 5%, 38%);
+    background-color: rgb(240,240,240);
+}
+.child-option{
+    padding: 15px;
+    font-size: medium;
+}
+

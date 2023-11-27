@@ -1,0 +1,26 @@
+.box-related-product{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+    margin-bottom: 20px;
+}
+.img-related-product{
+    width: 200px;
+}
+.info-product{
+    width: 17%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+}
+.info-product:hover{
+    border: 1px solid red;
+    
+}
+.name-product{
+    color: brown;
+    font-weight: 600;
+}

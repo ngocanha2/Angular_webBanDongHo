@@ -1,0 +1,21 @@
+<div class="group-list-product"  > 
+    <div *ngFor="let sp of listProduct | paginate: { itemsPerPage: pageSize, currentPage: pageNum, totalItems: total}" class="item-product">
+        <div class="content-product card">
+            <img class="img-product" src="../../assets/image/{{sp.hinh[0]}}">
+            <p class="name-product"> {{sp.tensp}} </p>
+            <p class="cost-product "> {{sp.giasp|number:'1.0-0'}} VNĐ </p>
+            <!-- <p class="">{{sp.idLoaiCon}}</p> -->
+            <!-- <p class="describe-product"> {{sp.mota}} </p> -->
+            <a class="btn btn-primary pd-10" routerLink="/sanpham/{{sp.id}}"> Xem chi tiết </a>
+            
+        </div>
+    </div>
+</div>
+
+<div> 
+    <pagination-controls (pageChange)="goToNextPage($event)" previousLabel="Prev" nextLabel="Next" [autoHide]="true" [responsive]="true" >
+    </pagination-controls>
+    <!-- <pagination-controls (pageChange)="goToNextPage($event)"
+    previousLabel="Prev" nextLabel="Next" [autoHide]="true" [responsive]="true">
+</pagination-controls> -->
+</div>

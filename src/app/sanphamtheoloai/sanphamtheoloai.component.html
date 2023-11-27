@@ -1,0 +1,61 @@
+<div class="banner bg-white">
+    <div class="col-md-11">
+        <div class="row">
+          <div class="col-md-3 ">
+            <div class="nav flex-column menu-category">
+                <p class="nav-item menu-category-header"><i class="bi bi-list"></i> PHÂN LOẠI</p>
+                <div *ngIf="listSubCategory.length > 0">
+                    <div *ngFor="let sub of listSubCategory">
+                        <p class="nav-link" (click)="loadSPBySubCategoryID(sub.id,idCategory )">{{sub.tenLoaiCon}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="child-mennu">
+                <div class="menu-category-child-header">DANH MỤC </div>
+                <div *ngFor="let loai of listCategoryName">
+                    <p class="item-child-menu" (click)="loadSPByCategoryIdOrther(loai.id)">
+                        <i class="bi bi-plus-circle"></i>&nbsp; &nbsp; {{loai.tenLoai}} 
+                    </p>
+                </div>
+            </div> 
+         </div>
+         
+         <div  class="col-md-9">
+            <div class="group-title">
+                <img class="img-title" src="../../assets/image/systerm/sub-banner.jpg">
+                <h3 class="title-category"> {{nameCategory}}</h3>
+            </div>
+            
+            <!-- danh sách sản phẩm -->
+            <div *ngIf="listProduct.length > 0; else noproduct">
+                <div> 
+                    <div class="group-list-product"  > 
+                        <div *ngFor="let sp of listProduct
+                             | paginate: { itemsPerPage: pageSize, currentPage: pageNum, totalItems: total}" class="item-product">
+                            <div class="content-product">
+                                <img class="img-product" src="../../assets/image/{{sp.hinh[0]}}">
+                                <p class="name-product"> {{sp.tensp}} </p>
+                                <p class="cost-product"> {{sp.giasp|number:'1.0-0'}} VNĐ </p>
+                                <a class="btn btn-primary pd-10" routerLink="/sanpham/{{sp.id}}"> Xem chi tiết </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Phân trang -->
+                    <div class="">
+                        <pagination-controls (pageChange)="goToNextPage($event)"
+                            previousLabel="Prev" nextLabel="Next" [autoHide]="true" [responsive]="true">
+                        </pagination-controls>
+                    </div>
+                </div>
+                
+            </div>
+            <ng-template #noproduct>
+                <p>Không có sản phẩm thuộc loại {{nameCategory}}</p>
+            </ng-template>
+            
+            <!-- end danh sách sản phẩm -->
+            </div>
+        </div>
+      </div>   
+</div>
+

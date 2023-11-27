@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container >header { height: 120px;}
+.container >nav { height: 60px;}
+.container > main { display: flex; min-height: 400px;}
+.container > footer { height: 35px; line-height: 35px;}
+
+.img-logo-shop{
+    width: 70px;
+    height: 70px;
+}
+.group-heaher{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.carousel-item img {
+    height: 300px; 
+    width: 100%;
+    object-fit: cover; 
+}
+.flex-center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-header{
+    width: 100%;
+}
+
+.group-right-header{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.icon-personal{
+    color: aliceblue;
+    font-size: 30px;
+}
+
+.group-personal{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+}
+
+.group-option-personal{
+    width: 250px;
+    position: absolute;
+    padding: 10px 20px;
+    top: 50px;
+    right: 0;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 2px #c3bfbf;
+    z-index: 9999;
+    
+    display: none;
+}
+
+.footer-group{
+    bottom: 0;
+    width: 100%;
+    padding-top: 30px;
+}
+.group-render-content{
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+     align-items: center;
+}
+.group-content{
+    flex: 1;
+    min-height: 100vh;
+}
+.pd-30{
+    padding: 30px;
+    line-height: 2;
+}
+.pd-10{
+    padding: 10px;
+}
+.pd-5{
+    padding: 5px;
+}
+
+.bg-white{
+    background-color: white;
+}
+.mg-t-20{
+    margin-top: 20px;
+}

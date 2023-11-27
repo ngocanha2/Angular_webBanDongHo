@@ -1,0 +1,40 @@
+<div class="row mt-30 bg-white"> 
+    <div class="col-md-3">
+        <app-menubaradmin> </app-menubaradmin>
+    </div>
+    <div class="col-md-9">
+       <div >
+        <form class="" #frmDanhMuc>
+            <div class="mb-3">
+              <label for="name" class="form-label">Tên danh mục</label>
+              <textarea class="form-control" id="name" name="name" placeholder="Nhập tên sản phẩm" required [(ngModel)]="catogery.tenLoai"></textarea>
+              <div class="invalid-feedback">
+                Tên danh mục không được để trống
+              </div>
+            </div>
+          
+        <div style="border:1px solid #cfcccc; padding: 10px 20px;">
+            <p>Phân loại</p>
+            <div> 
+                <div class="mb-3" *ngFor="let sub of listSubCategory; let vt= index;">
+                  <!-- <label > {{listSubCategory[vt].tenLoaiCon}}</label> -->
+                    <input class="form-control subcatergory" type="text" name="subCatogory" placeholder="Nhập phân loại {{vt+1}}" value="{{sub.tenLoaiCon}}" (change)="changeValueSub($event,vt)"> 
+                    <div class="icon-delete" > <i class="bi bi-x-square ml-0" (click)="deleteInput(vt)"></i> </div>
+                </div>
+            </div>
+            <div (click)="addInputSub()"> <i class="bi bi-clipboard-plus"></i></div>
+
+          </div>
+
+            <div class="mb-3">
+              <button *ngIf="flag" class="btn btn-primary" type="submit" (click)="OnClickSubmit()" >Thêm danh mục</button>
+              <button *ngIf="!flag" class="btn btn-primary" type="submit" (click)="OnClickSubmit()" >Sửa thông tin danh mục</button>
+            </div>
+            
+          </form>
+
+       </div>
+      <!--  -->
+    </div>
+    </div>
+    

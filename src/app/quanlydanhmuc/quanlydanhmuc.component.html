@@ -1,0 +1,38 @@
+<div class="row mt-30"> 
+    <div class="col-md-3">
+        <app-menubaradmin> </app-menubaradmin>
+    </div>
+    <div class="col-md-9">
+        <table class="table table-striped">
+            <thead class="thead-dark table-primary">
+              <tr>
+                <th scope="col">Mã</th>
+                <th scope="col">Tên loại sản phẩm</th>
+                <th scope="col">Phân loại</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                
+              </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let i of listCatogery" scope="row">
+                    <td> {{i.id}}</td>
+                    <td> {{i.tenLoai}}</td>
+                    <td> <p *ngFor="let sub of getListSubCategoryByIdCatogery(i.id); index as vt"> {{vt+1}}. {{sub.tenLoaiCon}}</p></td>
+                   
+                    <td> <i class="bi bi-clipboard-x" (click)="deleteCategoryById(i)"></i> </td>
+                    <td><i class="bi bi-pencil-square" (click)="updateCategoryByID(i)" ></i> </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td colspan="3" class="mr-0"><button class="btn btn-success" (click)="onClickInsertCatory()" > Thêm danh mục </button></td>
+                 </tr>
+            </tfoot>
+            
+        </table>
+    </div>
+</div>
+

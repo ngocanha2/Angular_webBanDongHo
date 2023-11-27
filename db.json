@@ -1,0 +1,609 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "hoTen": "admin",
+      "email": "anh@gmail.com",
+      "sdt": "0212123325",
+      "tenDangNhap": "admin",
+      "matKhau": "admin"
+    },
+    {
+      "id": 2,
+      "hoTen": "Lê Ngọc",
+      "email": "ngocanh@gmail.com",
+      "sdt": "0212123325",
+      "tenDangNhap": "NgocLe",
+      "matKhau": "123"
+    },
+    {
+      "id": 3,
+      "hoTen": "Ngọc Như",
+      "email": "nhungoc@gmail.com",
+      "sdt": "0212127789",
+      "tenDangNhap": "NgocNhu",
+      "matKhau": "123"
+    },
+    {
+      "matKhau": "123",
+      "email": "nhuvan@gmail.com",
+      "hoTen": "Như vân",
+      "sdt": "1231233333",
+      "tenDangNhap": "VanNhu",
+      "id": 4
+    }
+  ],
+  "sanpham": [
+    {
+      "id": 1,
+      "tensp": "Đồng hồ Esprit 30 mm Nữ ES1L315M0085  ",
+      "giasp": "5490000",
+      "solanxem": 45,
+      "hot": 1,
+      "mota": "Đồng hồ Esprit 30 mm Nữ ES1L315M0085 thuộc thương hiệu Esprit của Mỹ. Đồng hồ sở hữu đường kính mặt 30 mm, phù hợp với các bạn nữ. Chất liệu mặt kính là kính khoáng (Mineral), có độ cứng và độ chịu lực tốt khi bị va đập, dễ dàng đánh bóng khi bị trầy xước nhẹ. Khung viền của đồng hồ làm từ thép không gỉ \n sáng bóng, hạn chế chống ăn mòn và trầy xước.Chất liệu dây đeo được làm từ thép không gỉ \n Sang trọng và hạn chế chống ăn mòn, tạo cảm giác mát tay cho người dùng khi đeo.",
+      "hinh": [
+        "Hinh1.jpg",
+        "Hinh2.jpg",
+        "Hinh3.jpg"
+      ],
+      "ngay": "2024-04-01",
+      "idLoai": "1",
+      "idLoaiCon": 0,
+      "soluong": 20
+    },
+    {
+      "id": 2,
+      "tensp": "Đồng hồ Esprit 30 mm Nữ ES1L330L0025",
+      "giasp": "33490000",
+      "solanxem": 13,
+      "hot": 0,
+      "mota": "Đồng hồ Esprit 30 mm Nữ ES1L330L0025 thuộc thương hiệu Esprit của Mỹ. Đồng hồ sở hữu đường kính mặt 30 mm, phù hợp với các bạn nữ. Chất liệu mặt kính là kính khoáng (Mineral), có độ cứng và độ chịu lực tốt khi bị va đập, dễ dàng đánh bóng khi bị trầy xước nhẹ. Khung viền của đồng hồ làm từ da tổng hợp - mềm mại, mang lại sự thoải mái cho người dùng khi đeo.Chất liệu dây đeo được làm từ thép không gỉ - sang trọng và hạn chế chống ăn mòn, tạo cảm giác mát tay cho người dùng khi đeo.",
+      "hinh": [
+        "Hinh4.jpg",
+        "Hinh5.jpg",
+        "Hinh6.jpg"
+      ],
+      "ngay": "2024-04-02",
+      "idLoai": "1",
+      "idLoaiCon": 0,
+      "soluong": 20
+    },
+    {
+      "id": 3,
+      "tensp": "Đồng hồ CITIZEN 40 mm Nam NH8391-51L",
+      "giasp": "6990000",
+      "solanxem": 133,
+      "hot": 0,
+      "mota": " Đồng hồ Citizen đến từ xứ sở hoa anh đào - Nhật Bản. Mỗi dòng đồng hồ Citizen đều có kiểu thiết kế độc đáo, nhà sản xuất luôn cập nhật các xu hướng hiện đại nhưng vẫn duy trì được nét đặc trưng riêng của mỗi dòng sản phẩm từ trước đến nay. Mẫu đồng hồ này phù hợp với những ai thích sự thanh lịch và sang trọng.Đường kính mặt của mẫu đồng hồ CITIZEN 40 mm Nam NH8391-51L này là 40 mm, độ rộng dây là 20 mm. Khung viền và dây đeo đồng hồ làm từ thép không gỉ 316L cứng cáp, bền bỉ và có khả năng chống chịu mọi thời tiết, chống oxy hoá. Khả năng chống nước của mẫu đồng hồ nam này là 5 ATM, người dùng hoàn toàn có thể sử dụng khi đi tắm, đi mưa. Không nên sử dụng khi đi bơi, lặn.Lịch ngày và lịch thứ được tích hợp ngay trên mặt đồng hồ khiến người dùng nắm bắt thời gian một cách thuận tiện. Kim dạ quang giúp người dùng theo dõi thời gian trong bóng tối dễ dàng hơn.",
+      "hinh": [
+        "Hinh7.jpg",
+        "Hinh8.jpg",
+        "Hinh9.jpg"
+      ],
+      "ngay": "2024-04-03",
+      "idLoai": "1",
+      "idLoaiCon": 1,
+      "soluong": 30
+    },
+    {
+      "id": 4,
+      "tensp": "Đồng hồ CITIZEN 40 mm Nam NJ0155-87E",
+      "giasp": "10490000",
+      "solanxem": 321,
+      "hot": 1,
+      "mota": " Đồng hồ Citizen đến từ xứ sở hoa anh đào - Nhật Bản. Mỗi dòng đồng hồ Citizen đều có kiểu thiết kế độc đáo, nhà sản xuất luôn cập nhật các xu hướng hiện đại nhưng vẫn duy trì được nét đặc trưng riêng của mỗi dòng sản phẩm từ trước đến nay. Mẫu đồng hồ này phù hợp với những ai thích sự thanh lịch và sang trọng.Đường kính mặt của mẫu đồng hồ CITIZEN 40 mm Nam NJ0155-87E này là 40 mm, độ rộng dây là 19 mm.Khung viền đồng hồ làm từ thép không gỉ 316L cứng cáp, bền bỉ và có khả năng chống chịu mọi thời tiết, chống oxi hoá. Dây đeo thép không gỉ 316L, ôm trọn cổ tay người dùng, dây đeo còn vô cùng hợp thời trang.Khả năng chống nước của mẫu đồng hồ nam này là 5 ATM, người dùng hoàn toàn có thể sử dụng khi đi tắm, đi mưa. Không nên sử dụng khi đi bơi, lặn.Lịch ngày được tích hợp ngay trên mặt đồng hồ khiến người dùng nắm bắt thời gian một cách thuận tiện. Kim dạ quang giúp người dùng theo dõi thời gian trong bóng tối.",
+      "hinh": [
+        "Hinh10.jpg",
+        "Hinh11.jpg",
+        "Hinh12.jpg"
+      ],
+      "ngay": "2024-04-04",
+      "idLoai": "1",
+      "idLoaiCon": 1,
+      "soluong": 50
+    },
+    {
+      "id": 5,
+      "tensp": "Đồng hồ MOVADO 30 mm Nữ 0607489",
+      "giasp": "2990000",
+      "solanxem": 5,
+      "hot": 1,
+      "mota": "- Đến từ hãng đồng hồ Movado, thương hiệu nổi tiếng của Thụy Sĩ. Sản phẩm sở hữu nét đẹp thanh lịch, sang trọng, phù hợp với mọi trang phục thời thượng.- Bộ máy cơ mạnh mẽ, vận hành theo nguyên lý tự động lên dây cót bằng hoạt động của cổ tay người dùng.- Đường kính mặt của đồng hồ là 30 mm - Khung viền của đồng hồ cơ được làm từ thép không gỉ chống oxy hóa, bền bỉ theo thời gian. Dây kim loại sang trọng, cứng cáp, mát tay khi đeo.- Mẫu đồng hồ nữ này có hệ số chống nước là 3 ATM nên hoàn toàn an tâm di chuyển dưới mưa và rửa tay. Không nên mang khi tắm, bơi và lặn để tránh sản phẩm hư hại",
+      "hinh": [
+        "Hinh13.jpg",
+        "Hinh14.jpg",
+        "Hinh15.jpg"
+      ],
+      "ngay": "2024-04-02",
+      "idLoai": "1",
+      "idLoaiCon": 1,
+      "soluong": 50
+    },
+    {
+      "id": 6,
+      "tensp": "Đồng hồ Esprit 30 mm Nữ ES1L315L0035 ",
+      "giasp": "10990000",
+      "solanxem": 34,
+      "hot": 1,
+      "mota": "Đồng hồ Esprit 30 mm Nữ ES1L315L0035 thuộc thương hiệu Esprit của Mỹ. Đồng hồ sở hữu đường kính mặt 30 mm, phù hợp với các bạn nữ. Chất liệu mặt kính là kính khoáng (Mineral), có độ cứng và độ chịu lực tốt khi bị va đập, dễ dàng đánh bóng khi bị trầy xước nhẹ. Khung viền của đồng hồ làm từ da tổng hợp - mềm mại, mang lại sự thoải mái cho người dùng khi đeo. Chất liệu dây đeo được làm từ thép không gỉ - sang trọng và hạn chế chống ăn mòn, tạo cảm giác mát tay cho người dùng khi đeo.",
+      "hinh": [
+        "Hinh16.jpg",
+        "Hinh17.jpg",
+        "Hinh18.jpg"
+      ],
+      "ngay": "2024-04-07",
+      "idLoai": "1",
+      "idLoaiCon": 0,
+      "soluong": 0
+    },
+    {
+      "id": 8,
+      "tensp": "Đồng hồ CITIZEN C7 40 mm Nam NH8395-77E",
+      "giasp": "42490000",
+      "solanxem": 231,
+      "hot": 0,
+      "mota": " - Đến từ hãng đồng hồ Citizen, thương hiệu Nhật Bản nổi tiếng với nhiều chiếc đồng hồ thời thượng - Thuộc BST Citizen C7 mới, là bản nâng cấp về thiết kế của bản Crystal Seven ra mắt năm 1965- Đồng hồ cơ tự động, bền bỉ, không cần dùng pin, lên dây cót bằng chuyển động của cổ tay- Chiếc đồng hồ nam có đường kính mặt 40 mm, và dây đeo rộng 20 mm thích hợp với những chàng trai có chu vi cổ tay từ 18 - 19 cm - Với dây đeo và khung viền được làm từ thép không gỉ bền bỉ, chống ăn mòn và oxi hóa tốt, bảo vệ tốt lõi đồng hồ- Hệ số chống nước 5 ATM, có thể mang đồng hồ ngay cả khi tắm rửa, đi mưa, rửa tay. Không nên đeo đồng hồ khi đi bơi hay lặn - Quản lý thời gian tốt hơn với lịch thứ và lịch ngày tiện ích",
+      "hinh": [
+        "Hinh22.jpg",
+        "Hinh23.jpg",
+        "Hinh24.jpg"
+      ],
+      "ngay": "2024-04-02",
+      "idLoai": "2",
+      "idLoaiCon": 1,
+      "soluong": 30
+    },
+    {
+      "id": 9,
+      "tensp": "Đồng hồ Titoni 33.5 mm Nữ 828 SRG-ST-652",
+      "giasp": "9990000",
+      "solanxem": 672,
+      "hot": 1,
+      "mota": " • Mẫu đồng hồ Titoni thời thượng và đẳng cấp, thương hiệu nổi tiếng đến từ Thuỵ Sĩ. Đồng hồ Titoni 33.5 mm Nữ 828 SRG-ST-652 nổi bật với thiết kế sang trọng và cực kì tinh tế.• Chiếc đồng hồ nữ này sở hữu đường kính mặt 33.5 mm, độ rộng dây ​17 mm.• Khung viền của đồng hồ được làm từ thép không gỉ 316L mạ PVD sáng bóng, chịu va đập tốt, bền đẹp với thời gian. Da tổng hợp là chất liệu của dây đeo, mềm mại và nhẹ nhàng, thoải mái đeo cả ngày dài.• Độ chống nước 10 ATM cho phép bạn đeo đồng hồ khi đi tắm, đi bơi, không nên mang khi đi lặn.• Lịch ngày được tích hợp ngay trên mặt đồng hồ, giúp người dùng theo dõi thời gian một cách thuận tiện. ",
+      "hinh": [
+        "Hinh25.jpg",
+        "Hinh26.jpg",
+        "Hinh27.jpg"
+      ],
+      "ngay": "2024-05-01",
+      "idLoai": "2",
+      "soluong": 0
+    },
+    {
+      "id": 10,
+      "tensp": "Đồng hồ Orient Star 41 mm Nam RE-AV0120L00B ",
+      "giasp": "12690000",
+      "solanxem": 14,
+      "hot": 0,
+      "mota": " • Với hơn 50 năm kinh nghiệm trong ngành đồng hồ, thương hiệu Orient của Nhật Bản đã xây dựng được sự uy tín và chất lượng đáng tin cậy. Đó là một trong những lý do giúp cho những chiếc đồng hồ của hãng trở nên nổi tiếng và được yêu thích trên toàn thế giới nói chung và Việt Nam nói riêng. • Đồng hồ Orient Star 41 mm Nam RE-AV0120L00B mang phong cách Classic cổ điển, ấn tượng đầu tiên bạn cảm nhận thấy sẽ là kiểu dáng khoẻ khoắn và vô cùng mạnh mẽ, ấn tượng với những chi tiết được gia công đầy tỉ mỉ. Đặc biệt, mặt đồng hồ được thiết kế lộ cơ, giúp bạn có thể chiêm ngưỡng toàn bộ quá trình hoạt động của bộ máy bên trong. • Đặc biệt, đồng hồ Orient gần như phù hợp với mọi kích cỡ cổ tay của người Châu Á nói chung và Việt Nam nói riêng, từ nhỏ đến trung bình với đường kính mặt là 41 mm. Ngoài ra, mặt kính của sản phẩm là kính Sapphire, có khả năng chống trầy và độ trong suốt tốt giúp bạn an tâm khi sử dụng. • Khung viền được chế tạo từ thép không gỉ sáng bóng cùng khả năng chống chịu va đập đồng thời hạn chế ăn mòn khá tốt giúp người dùng có thể yên tâm khi sử dụng. Đặc biệt, dây đeo của sản phẩm được sử dụng công nghệ mạ PVD tiên tiến kết hợp với chất liệu là thép không gỉ giúp tăng độ bóng bẩy so với các mẫu đồng hồ thông thường.• Hãng đã trang bị dạ quang cho đồng hồ nam này giúp cho người dùng có thể dễ dàng xem giờ vào ban đêm hay trong điều kiện thiếu sáng. Ngoài ra, tính năng kim đo thời gian tích cót cho phép người dùng đo thời gian được tích lũy trong một khoảng thời gian nhất định, tính năng này có nhiều ứng dụng trong các hoạt động đo thời gian, chẳng hạn như đua xe, đua thuyền, hay các hoạt động thể thao khác. Kim đo thời gian tích cót cũng là một công cụ hữu ích cho những người yêu thích đồng hồ và muốn sử dụng thời gian một cách chính xác. • Hệ số chống nước của sản phẩm là 10 ATM, các bạn nam có thể sử dụng thường xuyên kể cả khi rửa tay, đi mưa, tắm, bơi lội. Lưu ý: không đeo khi đi lặn.",
+      "hinh": [
+        "Hinh28.jpg",
+        "Hinh29.jpg",
+        "Hinh30.jpg"
+      ],
+      "ngay": "2024-05-01",
+      "idLoai": "2",
+      "idLoaiCon": 3,
+      "soluong": 10
+    },
+    {
+      "id": 11,
+      "tensp": "Đồng hồ MVW STAR 42 mm Nam MLA005-01",
+      "giasp": "12590000",
+      "solanxem": 97,
+      "hot": 1,
+      "mota": "• Đồng hồ MVW là thương hiệu độc quyền của Thế Giới Di Động, sở hữu những thiết kế mang phong cách hiện đại, sang trọng. Đồng hồ MVW là dòng phân khúc cao cấp dành cho nam, sở hữu thiết kế thời trang và tinh tế dành cho các chàng trai nam tính, trẻ trung và năng động. • Đồng hồ nam này có thiết kế đường kính mặt đồng hồ là 42 mm, độ rộng dây 20 mm. • Khung viền được làm từ thép không gỉ 316L bền chắc, chịu lực tốt, dễ lau chùi khi bám bẩn. Dây đeo làm từ da tổng hợp thoải mái khi đeo cả ngày dài.• Đồng hồ MVW STAR 42 mm Nam MLA005-01 được đảm bảo an toàn với độ chống nước 5 ATM, bạn thoải mái đeo khi tắm, rửa tay hay đi mưa, không mang khi bơi, lặn.",
+      "hinh": [
+        "Hinh31.jpg",
+        "Hinh32.jpg",
+        "Hinh33.jpg"
+      ],
+      "ngay": "2024-05-02",
+      "idLoai": "2",
+      "idLoaiCon": 3,
+      "soluong": 30
+    },
+    {
+      "id": 12,
+      "tensp": "Đồng hồ FREDERIQUE CONSTANT Classics 30.4 x 33.3 mm Nam FC-310MC4S34 ",
+      "giasp": "12190000",
+      "solanxem": 189,
+      "hot": 1,
+      "mota": "- Ấn tượng bởi vẻ ngoài độc đáo và thiết kế lộ máy đến từ thương hiệu đồng hồ Frederique Constant uy tín, chất lượng đến từ Thụy Sĩ- Sở hữu bộ máy Automatic cho kim giờ, kim phút và kim giây chuyển động một cách mượt mà và có mức dự trữ năng lượng là 38 giờ khi được đeo hoặc lên dây cót - Mặt đồng hồ nam là dạng hình chữ nhật có chiều cao là 33.3 mm và chiều rộng là 30.4 mm - Khung viền được gia công từ thép không gỉ 316L mạ PVD với những đặc điểm vượt trội như độ cứng cao, chịu được điều kiện nhiệt độ khắc nghiệt và khả năng chống ăn mòn cao hơn hẳn so với thép không gỉ thông thường. Dây đồng hồ bằng da bò vừa vặn, tạo cảm giác thoải mái dù đeo cả ngày - Hệ số chống nước là 3 ATM để người dùng tự tin mang theo khi đi mưa nhỏ và rửa tay mà không sợ hư hỏng. Tuy nhiên, chỉ nên giữ đồng hồ ở nơi khô ráo trong lúc tắm, bơi hoặc lặn",
+      "hinh": [
+        "Hinh34.jpg",
+        "Hinh35.jpg",
+        "Hinh36.jpg"
+      ],
+      "ngay": "2024-05-02",
+      "idLoai": "2",
+      "idLoaiCon": 3,
+      "soluong": 0
+    },
+    {
+      "id": 13,
+      "tensp": "Đồng hồ Casio G-SHOCK 43.2 mm Nam GM-5600G-9DR",
+      "giasp": "14990000",
+      "solanxem": 97,
+      "hot": 1,
+      "mota": "• Đồng hồ G-SHOCK 43.2 mm Nam GM-5600G-9DR là một sản phẩm đến từ thương hiệu Casio - một thương hiệu đồng hồ nổi tiếng từ Nhật Bản. Với thiết kế đặc trưng của dòng G-Shock, sản phẩm này mang phong cách mạnh mẽ, nam tính, với bề ngoài màu đen và vỏ máy nhỏ gọn nhưng cực kỳ bền bỉ và chắc chắn. Điều này giúp cho người dùng có thể sử dụng sản phẩm ở mọi địa điểm và trong mọi tình huống.• Với kiểu dáng hầm hố, đường nét sắc sảo và từng chi tiết được chăm chút, chiếc đồng hồ này toát lên sự mạnh mẽ, phù hợp với giới trẻ hiện nay. Với mặt đồng hồ hình vuông và viền kim loại màu vàng nổi bật, kết hợp với dây đeo nhựa đen, sản phẩm tạo ra phong cách ấn tượng cho người dùng. • Sản phẩm được trang bị dây đeo bằng nhựa có khả năng chống thấm nước tốt, dễ dàng vệ sinh và bảo quản, cùng khung viền làm từ thép không gỉ mạ Ion vàng, giúp cho sản phẩm chống lại sự ăn mòn, và tăng tính thẩm mỹ cho mẫu thiết kế.",
+      "hinh": [
+        "Hinh1.jpg",
+        "Hinh2.jpg",
+        "Hinh3.jpg"
+      ],
+      "ngay": "2024-05-03",
+      "idLoai": "2",
+      "idLoaiCon": 0,
+      "soluong": 50
+    },
+    {
+      "id": 14,
+      "tensp": "mới",
+      "solanxem": 0,
+      "soluong": 100,
+      "giasp": 120000,
+      "idLoai": 1,
+      "idLoaiCon": 0,
+      "hinh": [
+        "Hinh65.jpg",
+        "Hinh71.JPG",
+        "Hinh72.JPG"
+      ],
+      "mota": ""
+    }
+  ],
+  "loaisp": [
+    {
+      "id": 1,
+      "tenLoai": "Đồng hồ pin thạch anh"
+    },
+    {
+      "id": 2,
+      "tenLoai": "Đồng hồ cơ"
+    },
+    {
+      "id": 3,
+      "tenLoai": "Đồng hồ năng lượng mặt trời"
+    },
+    {
+      "id": 4,
+      "tenLoai": "Đồng hồ điện tử"
+    },
+    {
+      "id": 5,
+      "tenLoai": "Đồng hồ siêu mỏng"
+    },
+    {
+      "id": 6,
+      "tenLoai": "Đồng hồ Chronograph"
+    },
+    {
+      "id": 7,
+      "tenLoai": "Đồng hồ thông minh "
+    },
+    {
+      "id": 8,
+      "tenLoai": "test"
+    }
+  ],
+  "loaispcon": [
+    {
+      "id": 1,
+      "tenLoaiCon": "Đồng hồ cơ Automatic",
+      "idLoaiCha": 2
+    },
+    {
+      "id": 2,
+      "tenLoaiCon": "Đồng hồ vừa cơ, vừa pin",
+      "idLoaiCha": 2
+    },
+    {
+      "id": 3,
+      "tenLoaiCon": "Đồng hồ cơ lộ máy",
+      "idLoaiCha": 6
+    },
+    {
+      "id": 4,
+      "tenLoaiCon": "Đồng hồ Double Chronograph",
+      "idLoaiCha": 6
+    },
+    {
+      "id": 5,
+      "tenLoaiCon": "Đồng hồ Fly-Black Chronograph",
+      "idLoaiCha": 6
+    },
+    {
+      "id": 5,
+      "tenLoaiCon": "Đồng hồ Chronograph Monopusher",
+      "idLoaiCha": 6
+    },
+    {
+      "id": 6,
+      "idLoaiCha": 8,
+      "tenLoaiCon": "ts1"
+    },
+    {
+      "id": 7,
+      "idLoaiCha": 8,
+      "tenLoaiCon": "ts2"
+    }
+  ],
+  "hoadon": [
+    {
+      "id": 1,
+      "userId": 4,
+      "tenNguoiNhanHang": "Lê Như Ngọc",
+      "diaChi": "75 Trường Chinh, Tây Thạnh, Tân Phú, HCM",
+      "sdt": "0121212332",
+      "trangThai": 2
+    },
+    {
+      "id": 2,
+      "diachi": "140 Lê Trọng Tấn, Tây Thạnh, Tân Phú, HCM",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 120000,
+      "sdt": "0212123325",
+      "userId": 4,
+      "trangThai": 2
+    },
+    {
+      "id": 3,
+      "diachi": "8A Nguyễn Văn Bứa, Xuân Thới Sơn, Hóc Môn, HCM",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 120000,
+      "sdt": "0212123325",
+      "userId": 4,
+      "trangThai": 2
+    },
+    {
+      "id": 4,
+      "diachi": "  ",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 120000,
+      "sdt": "0212123325",
+      "userId": 2,
+      "trangThai": 2
+    },
+    {
+      "id": 5,
+      "diachi": "30 Quang Trung, Gò Vấp, HCM",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 5490000,
+      "sdt": "0212123325",
+      "userId": 2,
+      "trangThai": 2
+    },
+    {
+      "id": 6,
+      "diachi": "225/4A Lũy bán bích, Tân Bình, HCM",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 120000,
+      "sdt": "0212123325",
+      "userId": 2,
+      "trangThai": 2
+    },
+    {
+      "id": 7,
+      "diachi": "42 Diệp Minh Châu, Tân Sơn Nhì Đồng, tp Hồ Chí Minh",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 33490000,
+      "sdt": "0212123325",
+      "userId": 2,
+      "trangThai": 2
+    },
+    {
+      "id": 8,
+      "diachi": "77 Số 13, Bình Hưng Hòa, Bình Tân, HCM",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 12190000,
+      "sdt": "0212123325",
+      "userId": 2,
+      "trangThai": 4
+    },
+    {
+      "id": 9,
+      "diachi": "222 Tân Đông Hiệp, Dĩ An, Bình Dương",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 33490000,
+      "sdt": "0212123325",
+      "userId": 2,
+      "trangThai": 3
+    },
+    {
+      "id": 10,
+      "diachi": "239 Âu Cơ, Tân Bình, tp Hồ Chí Minh",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 14990000,
+      "sdt": "0212123325",
+      "userId": 2,
+      "trangThai": 0
+    },
+    {
+      "id": 11,
+      "diachi": "55 Nguyễn Đỗ Cung, Tây Thạnh, Tân Phú, Hồ Chí Minh",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 42490000,
+      "sdt": "0212123325",
+      "userId": 2,
+      "trangThai": 1
+    },
+    {
+      "id": 12,
+      "diachi": "1A Phạm Ngọc Thảo, Tây Thạnh, Tân Phú, tp HCM",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 42490000,
+      "sdt": "0212123325",
+      "userId": 2,
+      "trangThai": 0
+    },
+    {
+      "id": 13,
+      "diachi": "63/80 Bình Long, Bình Hưng Hòa, Bình Tân, tp Hồ Chí Minh",
+      "tenNguoiNhannHang": "Ngọc Như",
+      "tongTien": 10990000,
+      "sdt": "0212127789",
+      "userId": 3,
+      "trangThai": 2
+    },
+    {
+      "id": 14,
+      "diachi": "725 Trường Chinh, Tân Phú, Hồ Chí Minh",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 54680000,
+      "sdt": "0212123325",
+      "userId": 2,
+      "trangThai": 2
+    },
+    {
+      "id": 15,
+      "diachi": "725 Trường Chinh, Tây Thạnh, Tân Phú, Hồ Chí Minh",
+      "tenNguoiNhannHang": "Lê Ngọc",
+      "tongTien": 42490000,
+      "sdt": "0212123325",
+      "userId": 2,
+      "trangThai": 0
+    }
+  ],
+  "chitiethoadon": [
+    {
+      "id": 1,
+      "idhd": 1,
+      "idsp": 1,
+      "donGia": 5490000,
+      "soLuong": 1,
+      "thanhTien": 5490000
+    },
+    {
+      "id": 2,
+      "idhd": 1,
+      "idsp": 2,
+      "donGia": 33490000,
+      "soLuong": 1,
+      "thanhTien": 33490000
+    },
+    {
+      "id": 3,
+      "idhd": 2,
+      "idsp": 14,
+      "donGia": 120000,
+      "soLuong": 1,
+      "thanhTien": 120000
+    },
+    {
+      "id": 4,
+      "idhd": 3,
+      "idsp": 14,
+      "donGia": 120000,
+      "soLuong": 1,
+      "thanhTien": 120000
+    },
+    {
+      "id": 5,
+      "idhd": 4,
+      "idsp": 14,
+      "donGia": 120000,
+      "soLuong": 1,
+      "thanhTien": 120000
+    },
+    {
+      "id": 6,
+      "idhd": 5,
+      "idsp": 1,
+      "donGia": "5490000",
+      "soLuong": 1,
+      "thanhTien": 5490000
+    },
+    {
+      "id": 7,
+      "idhd": 6,
+      "idsp": 14,
+      "donGia": 120000,
+      "soLuong": 1,
+      "thanhTien": 120000
+    },
+    {
+      "id": 8,
+      "idhd": 7,
+      "idsp": 2,
+      "donGia": "33490000",
+      "soLuong": 1,
+      "thanhTien": 33490000
+    },
+    {
+      "id": 9,
+      "idhd": 8,
+      "idsp": 12,
+      "donGia": "12190000",
+      "soLuong": 1,
+      "thanhTien": 12190000
+    },
+    {
+      "id": 10,
+      "idhd": 9,
+      "idsp": 2,
+      "donGia": "33490000",
+      "soLuong": 1,
+      "thanhTien": 33490000
+    },
+    {
+      "id": 11,
+      "idhd": 10,
+      "idsp": 13,
+      "donGia": "14990000",
+      "soLuong": 1,
+      "thanhTien": 14990000
+    },
+    {
+      "id": 12,
+      "idhd": 11,
+      "idsp": 8,
+      "donGia": "42490000",
+      "soLuong": 1,
+      "thanhTien": 42490000
+    },
+    {
+      "id": 13,
+      "idhd": 12,
+      "idsp": 8,
+      "donGia": "42490000",
+      "soLuong": 1,
+      "thanhTien": 42490000
+    },
+    {
+      "id": 14,
+      "idhd": 13,
+      "idsp": 6,
+      "donGia": "10990000",
+      "soLuong": 1,
+      "thanhTien": 10990000
+    },
+    {
+      "id": 15,
+      "idhd": 14,
+      "idsp": 8,
+      "donGia": "42490000",
+      "soLuong": 1,
+      "thanhTien": 42490000
+    },
+    {
+      "id": 16,
+      "idhd": 14,
+      "idsp": 12,
+      "donGia": "12190000",
+      "soLuong": 1,
+      "thanhTien": 12190000
+    },
+    {
+      "id": 17,
+      "idhd": 15,
+      "idsp": 8,
+      "donGia": "42490000",
+      "soLuong": 1,
+      "thanhTien": 42490000
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,47 @@
+<div class="box-detail-product bg-white">
+    <div class="group-detail-product">
+        <!-- img product -->
+        <div class="group-img-product"> 
+            <div class="group-watching-img">
+                <div class="icon-arrow" (click)="clickNext($event)">
+                    <i class="ti-angle-left"></i>
+                </div>
+                <img class="img-product" src="../../assets/image/{{product.hinh[displayImg]}}">
+               
+                <div class="icon-arrow right-0">
+                    <i class="ti-angle-right"></i>
+                </div>
+            </div>
+           
+            <br>
+            <!-- list image -->
+            <div class="group-product-image"> 
+                <img class="item-group-image" *ngFor="let img of product.hinh; index as i"  
+                    src="../../assets/image/{{img}}" (mouseenter)="displayImg = i">
+            </div>
+        </div>
+        <div class="detail-product-content"> 
+            <p class="name-product">{{product.tensp}} </p>
+            <p class="text-info-product"> Số lượng: {{product.soluong}} </p>
+            <p class="text-info-product">Giá: {{product.giasp | number: '1.0-0'}}</p>
+            <div class="group-btn"> 
+                <button type="button" class="btn btn-primary btn-lg" [routerLink]="['/sanpham']" >Mua tiếp</button>
+                <button type="button" class="btn btn-primary btn-lg" (click)="addToCart(product)">Thêm vào giỏ hàng</button>
+                <!-- <button type="button" class="btn btn-primary btn-lg" (click)="delete()">xóa</button> -->
+            </div>
+        </div> 
+       
+    </div>
+    <!-- thông tin chi tiết -->
+    <div class="pd-20">
+        <h4>Mô tả</h4>
+       
+        <p class="decribe-product">{{product.mota}}</p>    
+    </div>
+    <!-- Sản phẩm liên quan -->
+    <div class="pd-20"> 
+        <h4>Sản phẩm liên quan</h4>
+        <app-sanphamlienquan [idSP]="id" [idLoai]="product.idLoai" ></app-sanphamlienquan>
+    </div>
+</div>
+

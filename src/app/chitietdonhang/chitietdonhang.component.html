@@ -1,0 +1,43 @@
+<div class="col-md-12 bg-white">
+    <div class="row">
+       <div class=" col-md-5"> 
+            <p>Địa chỉ nhận hàng</p>
+            <p> {{order.tenNguoiNhannHang}} | {{order.sdt}}</p>
+            <p> {{order.diachi}}</p>
+       </div>
+       
+       <div class="col-md-7"> 
+        Số Hóa đơn: {{order.id}} &nbsp; &nbsp; &nbsp; 
+        <span *ngIf="order.trangThai == 0" style="background-color:#dc3545; color: white; padding: 5px; border-radius: 3px;" > Đã hủy </span>
+        <p>Trạng thái đơn hàng</p>
+        <!-- trạng thái đơn hàng -->
+        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-success"[style]="{width:order.trangThai*25 + '%' }">{{listStatus[order.trangThai]}}</div>
+          </div>
+        <!--  -->
+       </div>
+    </div>    
+
+    <div class="row" *ngFor="let detail of listDetailsOrder; index as i"> 
+        <div class="col-md-2">
+            <img class="img-sanpham" src="../../assets/image/{{listProduct[i].hinh[0]}}">     
+        </div>
+       <div class="col-md-7">
+            <p> x {{detail.soLuong}} </p>
+            <p> {{detail.thanhTien}} </p>
+            <!-- <a href="#" routerLink="sanpham/{{detail.idsp}}"> Xem chi tiết</a> -->
+
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <p>Tổng hóa đơn: {{order.tongTien}} </p>   
+            <p> </p> 
+        </div>    
+    </div>
+
+    <div class="row" *ngIf="order.trangThai==1">
+        <button class="btn btn-danger btn-huy-dat-hang" (click)="cancelOrder()"> Hủy đơn hàng</button>
+    </div>
+</div>

@@ -1,0 +1,10 @@
+.order-group{
+    display: block;
+}
+
+.order-result-group{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #d3c6c6;
+}

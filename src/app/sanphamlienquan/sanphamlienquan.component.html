@@ -1,0 +1,8 @@
+<div class="box-related-product">
+    <div class="info-product" *ngFor="let sp of listSanPhamLienQuan">
+        <img class="img-related-product" src="../../assets/image/{{sp.hinh[0]}}" > 
+        <p class="name-product">{{sp.tensp}}</p> 
+        <p>{{sp.giasp|number:'1.0-0'}} VNĐ</p>
+        <a class="btn btn-primary" href="#" routerLink="/sanpham/{{sp.id}}"> Xem chi tiết </a>
+    </div>
+</div>

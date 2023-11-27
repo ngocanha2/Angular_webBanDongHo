@@ -1,0 +1,51 @@
+<div *ngIf="listItemscart.length != 0 else cartIsEmpty " class="table-cart bg-white">
+    <table class="table ">
+        <thead class="thead-dark table-primary">
+          <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Mã</th>
+            <th scope="col">tên sản phẩm</th>
+            <th scope="col">Hình ảnh</th>
+            <th scope="col">Đơn giá</th>
+             <th scope="col">Số lượng</th>
+             <td scope="col">Tổng tiền </td>
+             <td scope="col">
+                <i class="bi bi-trash3" (click)="DeleteAll()"></i>
+            </td>
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listItemscart; index as i" scope="row">
+                <td>{{i+1}}</td>
+                <td>{{item.idsp}}</td>
+                <td>{{item.tensp}}</td>
+                <td><img class="img-product-cart" src="../../assets/image/{{item.hinh}}"> </td>
+                <td>{{item.giasp|number:'1.0-0'}} VNĐ</td>
+                <td> <input type="number"[value]="item.soluong" (blur)="validateInput($event,i,item.idsp)" (change)="validateForChangeEvent($event,i, item.idsp)">  </td>
+                <td>{{item.soluong * item.giasp|number:'1.0-0'}}VNĐ </td>
+                <td> <i class="bi bi-file-excel" (click)="DeleteOne(i)"></i></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Tổng giỏ hàng</td>
+                <td>{{sumCost|number:'1.0-0'}}VNĐ </td>
+                <td></td>
+            </tr>
+        </tfoot>
+        
+      </table>
+
+      <button type="button" class="btn btn-success" >Mua tiếp</button>
+      <span> &nbsp; &nbsp;&nbsp; &nbsp; </span>
+      <button type="button" class="btn btn-success" (click)="BuyProduct()">Thanh toán</button>
+</div>
+
+<ng-template #cartIsEmpty>
+    <p>Giỏ hàng rỗng</p>
+</ng-template>

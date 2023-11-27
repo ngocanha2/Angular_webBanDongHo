@@ -1,0 +1,43 @@
+<div class="row mt-30"> 
+<div class="col-md-3">
+    <app-menubaradmin> </app-menubaradmin>
+    
+</div>
+<div class="col-md-9">
+    <table class="table">
+        <thead class="thead-dark table-primary">
+          <tr>
+            <th scope="col">Mã</th>
+            <th scope="col">Hình ảnh</th>
+            <th scope="col">Tên sản phẩm</th>
+            <th scope="col">Đơn giá</th>
+             <th scope="col">Số lượng tồn</th>
+             <td scope="col"> </td>
+            <td scope="col"> </td> 
+          </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of listProduct" scope="row">
+                <td>{{item.id}}</td>
+                <td><img class="img-product-cart" src="../../assets/image/{{item.hinh[0]}}"> </td>
+                <td>{{item.tensp}}</td>
+                <td>{{item.giasp|number:'1.0-0'}} VNĐ</td>
+                <td> {{item.soluong}}</td>
+                <td> <i class="bi bi-clipboard-x" (click)="deleteProductById(item)"></i> </td>
+                <td><i class="bi bi-pencil-square" (click)="updateproductById(item.id)" ></i> </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                 <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                
+                <td colspan="4"><button class="btn btn-success" (click)="insertProduct()"> Thêm sản phẩm </button></td>
+             </tr>
+        </tfoot>
+        
+      </table>
+</div>
+</div>

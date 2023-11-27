@@ -1,0 +1,68 @@
+
+<div class="col-md-12 bg-white mg-t-20">
+    <div  class="row">
+        <div class="col-md-5"> 
+            <p> Người nhận hàng: {{order.tenNguoiNhannHang}} </p>
+            <p> Địa chỉ: {{order.diachi}} </p>
+            <p> Số điện thoại: {{order.sdt}} </p>
+        </div>    
+        <div class="col-md-5 .mg-t-20" >
+            <p>Tài khoản đặt hàng:{{userOrder.tenDangNhap}} </p>
+            <p> Người đặt hàng: {{userOrder.hoTen}}</p>
+            <p> email: {{userOrder.email}} </p>
+            <p> Số điện thoại: {{userOrder.sdt}}</p>
+        </div>  
+    </div>    
+    <div class="row">
+        <div class="col-md-9"> <h4>Chi tiết đơn hàng</h4> </div>
+
+        <div class="col-md-2" style="text-align: center;" [style.background-color]="color[order.trangThai]"> {{listStatus[order.trangThai]}}</div>
+        <!-- <div class="col-md-2"> {{listStatus[order.trangThai]}}</div> -->
+   </div>
+    <div class="row">
+        <table class="table table-striped"> 
+            <thead>
+                <tr>
+                <th scope="col"> STT </th>
+                <th scope="col"> Mã </th>
+                <th scope="col"> Tên </th>
+                <th scope="col"> hình ảnh</th>
+                <th scope="col"> Số lượng</th>
+                <th scope="col"> Đơn giá</th>
+                <th scope="col"> Thành tiền</th>  
+                </tr>  
+            </thead>
+            <tbody> 
+                <tr *ngFor="let detail of listDetailsOrder;  index as i" > 
+                    <td>{{i}} </td>
+                    <td>{{listProduct[i].id}} </td>
+                    <td>{{listProduct[i].tensp}} </td>
+                    <td> <img class="img-sanpham" src="../../assets/image/{{listProduct[i].hinh[0]}} "> </td>
+                    <td>{{detail.soLuong}} </td>
+                    <td>{{detail.donGia}} </td>
+                    <td>{{detail.thanhTien}} </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="5"> </td>
+                <td colspan="2"> Tổng hóa đơn: {{order.tongTien|number:'1.0-0'}} VNĐ </td>    
+            </tfoot>
+        </table>
+    </div>
+    
+
+    <div class="">
+       <div *ngIf="order.trangThai == 1 else template">
+            <button class="btn btn-danger" (click)="CancelOrder()"> Hủy đơn hàng</button>
+            <button class="btn btn-warning" style="margin-left: 20px;" (click)="ConfirmOrder()"> Xác nhận đơn hàng</button>
+        </div>
+        <ng-template #template>
+            <div *ngIf="order.trangThai!=0 && order.trangThai != 4"> 
+                <button class="btn btn-primary" (click)="changeStatusOrder()"> Xác nhận</button>
+            </div>
+            
+        </ng-template>
+    </div>
+</div>
+
+

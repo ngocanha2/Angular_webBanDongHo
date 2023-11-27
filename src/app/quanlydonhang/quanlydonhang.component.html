@@ -1,0 +1,53 @@
+
+<div class="bg-white"> 
+    <div>
+        <!-- Tab items -->
+        <div class="tabs">
+          <div class="tab-item active" (click)="changeOption($event,5)">
+            <i class="tab-icon fas fa-code"></i>
+            Tất cả
+          </div>
+          <div class="tab-item" (click)="changeOption($event,1)">
+            <i class="tab-icon fas fa-cog"></i>
+            Chờ xác nhận
+          </div>
+          <div class="tab-item" (click)="changeOption($event,2)">
+            <i class="tab-icon fas fa-plus-circle"></i>
+            Đang xử lý
+          </div>
+          <div class="tab-item" (click)="changeOption($event,3)">
+            <i class="tab-icon fas fa-plus-circle"></i>
+            Đang giao
+          </div>
+          <div class="tab-item" (click)="changeOption($event,4)">
+            <i class="tab-icon fas fa-pen-nib"></i>
+            Đã giao
+          </div>
+          <div class="tab-item" (click)="changeOption($event,0)">
+            <i class="tab-icon fas fa-pen-nib"></i>
+            Đã Hủy
+          </div>
+          <div class="line"></div>
+        </div>
+      
+        <!-- Tab content -->
+        <div class="tab-content">
+          <div class="tab-pane active">
+            <h2>{{listOptions[flag]}}</h2>
+            <div class="" *ngFor="let ord of listOrder; index as vt" >
+                <div class="card" style="margin-top: 20px;"  >
+                    <div class="card-body">
+                      <h5 class="card-title">Số hóa đơn: {{ord.id}}</h5>
+                      <div *ngFor=" let sp of listDetailOrder[vt]">
+                            <div> {{getInfoproduct(sp.id).tensp}}</div>
+                            <div> X {{sp.soLuong}}</div>
+                           <div> {{sp.donGia}}</div>
+                        </div>
+                      <p class="card-text">Thành tiền {{ord.tongTien}}</p>
+                      <a href="" routerLink="/chitietdonhang/{{ord.id}}" class="btn btn-primary">Xem chi tiết</a>
+                </div>    
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
